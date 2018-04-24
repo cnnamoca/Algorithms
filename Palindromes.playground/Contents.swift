@@ -4,8 +4,9 @@
 import Foundation
 
 func isPalindrome(str: String) -> Bool {
-    let strippedString = str.replacingOccurrences(of: "\\W", with: "", options: .regularExpression, range: nil)
+    let strippedString = str.replacingOccurrences(of: "\\W", with: "")
     let length = strippedString.count
+    print(length)
     
     if length > 1 {
         palindrome(str: strippedString.lowercased(), left: 0, right: length - 1)
