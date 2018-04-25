@@ -19,18 +19,14 @@ func twoSum(array: [Int], sum: Int) -> Bool {
         
         if sumOfItems == sum {
             return true
-        }
-        
-        if sumOfItems < sum {
+        } else if sumOfItems < sum {
             lhs += 1
-        }
-        
-        if sumOfItems > sum {
-            rhs += 1
+        } else if sumOfItems > sum {
+            rhs -= 1
         }
     }
     
     return false
 }
 
-twoSum(array: array, sum: 8)
+twoSum(array: array, sum: 31)
