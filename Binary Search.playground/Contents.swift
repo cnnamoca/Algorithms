@@ -43,7 +43,7 @@ func binarySearch(array: [Int], key: Int) -> Bool {
     return false
 }
 
-binarySearch(array: numbers, key: 9)
+binarySearch(array: numbers, key: 24)
 
 
 

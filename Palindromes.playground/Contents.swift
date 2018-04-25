@@ -9,7 +9,7 @@ func isPalindrome(str: String) -> Bool {
     print(strippedString)
     
     if length > 1 {
-        palindrome(str: strippedString.lowercased(), left: 0, right: length - 1)
+        return palindrome(str: strippedString.lowercased(), left: 0, right: length - 1)
     }
     
     return false
@@ -27,7 +27,7 @@ func palindrome(str: String, left: Int, right: Int) -> Bool {
         return false
     }
     
-    return palindrome(str: str, left: left + 1, right: right + 1)
+    return palindrome(str: str, left: left + 1, right: right - 1)
 }
 
 isPalindrome(str: "radar")
